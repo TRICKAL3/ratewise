@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RateWise Admin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>RateWise Admin</h1>
+        <form id="rate-form">
+            <label for="bank-select">Select a Bank:</label>
+            <select id="bank-select">
+                <option value="National Bank">National Bank</option>
+                <option value="Standard Bank">Standard Bank</option>
+                <option value="First Capital Bank">First Capital Bank</option>
+                <option value="NBS Bank">NBS Bank</option>
+                <option value="FDH Bank">FDH Bank</option>
+                <option value="Ecobank">Ecobank</option>
+            </select>
+            <div id="currency-inputs">
+                <label for="usd-rate">USD Rate:</label>
+                <input type="number" id="usd-rate" placeholder="Enter USD Rate">
+                <label for="eur-rate">EUR Rate:</label>
+                <input type="number" id="eur-rate" placeholder="Enter EUR Rate">
+                <label for="gbp-rate">GBP Rate:</label>
+                <input type="number" id="gbp-rate" placeholder="Enter GBP Rate">
+            </div>
+            <button type="submit">Save Rates</button>
+        </form>
+        <p id="status-message"></p>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>
